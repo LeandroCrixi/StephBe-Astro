@@ -3,11 +3,13 @@ import Header from "../components/Header.astro";
 import Footer from '../components/Footer.astro';
 import CTA from '../components/CTA.astro'
 import '../styles/style.css';
+import logo from '../../public/img/Logo3.svg'
 
 const { metaDescription } = Astro.props;
 const { metaKeywords } = Astro.props;
 const { title } = Astro.props;
 const { ogUrl } = Astro.props;
+const { classMain } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,6 +29,7 @@ const { ogUrl } = Astro.props;
     <meta property="og:description" content={metaDescription} />
 
     <!-- Favicon Icon -->
+    <link rel="shortcut icon" href={logo} type="image/x-icon" />
     <!-- <link rel="shortcut icon" href="./public/img/Logo3.svg" type="image/x-icon" /> -->
 
     <title>{title}</title>
@@ -49,7 +52,8 @@ const { ogUrl } = Astro.props;
             "@type": "Organization",
             "name": "StephBe",
             "url": {ogUrl},
-            // "logo": "https://stephbe.ie/public/img/Logo2.svg"
+            "logo": {logo}
+            // "logo": "https://stephbe.ie/public/img/Logo3.svg"
           },
           {
             "@type": "WebSite",
@@ -69,7 +73,7 @@ const { ogUrl } = Astro.props;
   <body>
 	<Header/>
     
-	<main>
+	<main class={classMain}>
 		<slot />
 		<CTA/>
 	</main>
