@@ -1,0 +1,318 @@
+.individuals {
+  & .hero-section {
+    background: var(--white);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    & h1 {
+      font: var(--font-h1);
+      color: var(--black);
+    }
+    & h4 {
+      font: var(--font-h4);
+      padding-bottom: 20px;
+    }
+    & p {
+      font: var(--font-p2);
+    }
+    & .btn-section {
+      padding: 40px 0px;
+      & .btn {
+        margin-left: 20px;
+      }
+    }
+  }
+  & .performance {
+    background: var(--red2);
+    padding: 40px 160px;
+    & h2 {
+      font: var(--font-h2);
+      font-weight: 700;
+      color: var(--white);
+    }
+    & p {
+      font: var(--font-p1);
+      color: var(--white);
+      padding: 10px 0px;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .individuals {
+    & .performance {
+      padding: 40px 80px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .individuals {
+    & .performance {
+      padding: 40px;
+    }
+  }
+}
+
+.individuals {
+  & .courses-programmes {
+    background-image: url("../../../public/img/home/hero-img.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & .content {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 500px 40px 80px;
+      & h2 {
+        font: var(--font-h2);
+        font-weight: 700;
+        color: var(--white);
+      }
+      & p {
+        font: var(--font-p1);
+        font-weight: 300;
+        color: var(--white);
+        padding: 20px 0px;
+      }
+      & .courses-grid {
+        padding-top: 40px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        & .course-card {
+          border: 4px solid var(--white);
+          padding: 20px;
+          background: var(--white);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          & h3 {
+            font: var(--font-p1);
+            color: var(--red);
+          }
+          & p {
+            font: var(--font-p2);
+            font-weight: 300;
+            padding: 10px 0px;
+            color: var(--black);
+          }
+          & a {
+            font: var(--font-p3);
+            color: var(--black);
+            &:hover {
+              color: var(--red2);
+            }
+          }
+          &:hover {
+            border-color: var(--red);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .individuals {
+    & .courses-programmes {
+      & .content {
+        padding: 40px 300px 40px 80px;
+      }
+    }
+  }
+}
+@media (max-width: 1133px) {
+  .individuals {
+    & .courses-programmes {
+      & .content {
+        padding: 40px 300px 40px 80px;
+        & .courses-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 852px) {
+  .individuals {
+    & .courses-programmes {
+      & .content {
+        padding: 40px 200px 40px 80px;
+        & .courses-grid {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 667px) {
+  .individuals {
+    & .courses-programmes {
+      & .content {
+        padding: 40px 20px;
+        & .courses-grid {
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+.individuals {
+  & .flexible {
+    background: var(--pink);
+    padding: 40px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & h3 {
+      font: var(--font-h0);
+      color: var(--red);
+    }
+    & h4 {
+      font: var(--font-h4);
+      color: var(--red);
+    }
+    & p {
+      font: var(--font-p1);
+      font-weight: 300;
+      color: var(--red);
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .individuals {
+    & .flexible {
+      padding: 40px;
+      & p {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.individuals {
+  & .coaching {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    gap: 40px;
+    & .title {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      & h2 {
+        font: var(--font-h1);
+      }
+      & p {
+        font: var(--font-p2);
+      }
+    }
+    & .contents {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      & .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        border: 4px solid var(--pink);
+        padding: 20px;
+        & img {
+          width: 30px;
+          height: 30px;
+        }
+        & h3 {
+          font: var(--font-h4);
+        }
+        & p {
+          font: var(--font-p2);
+        }
+        & .btn-section {
+          padding: 10px 0px;
+          & a {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        &:hover {
+          border-color: var(--red);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .individuals {
+    & .coaching {
+      grid-template-columns: 1fr;
+      & .title {
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .individuals {
+    & .coaching {
+      & .contents {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+.individuals {
+  & .why-coaching {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 300px;
+    & h2 {
+      font: var(--font-h1);
+      color: var(--red2);
+    }
+    & p {
+      font: var(--font-p1);
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .individuals {
+    & .why-coaching {
+      padding: 40px 200px;
+    }
+  }
+}
+
+@media (max-width: 932px) {
+  .individuals {
+    & .why-coaching {
+      padding: 40px 120px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .individuals {
+    & .why-coaching {
+      padding: 40px;
+      padding-top: 0px;
+    }
+  }
+}

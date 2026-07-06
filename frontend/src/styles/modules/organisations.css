@@ -1,0 +1,296 @@
+.organisations {
+  & .hero-section {
+    background: var(--white);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    & h1 {
+      font: var(--font-h1);
+      color: var(--black);
+    }
+    & h4 {
+      font: var(--font-p2);
+    }
+    & .btn-section {
+      padding: 40px 0px;
+    }
+  }
+
+  & .leading {
+    background: var(--red2);
+    padding: 40px 160px;
+    & h2 {
+      font: var(--font-h2);
+      font-weight: 700;
+      color: var(--white);
+    }
+    & p {
+      font: var(--font-p1);
+      color: var(--white);
+      padding: 20px 0px;
+    }
+    & ul {
+      & li {
+        font: var(--font-p2);
+        color: var(--white);
+        list-style: disc;
+        list-style-position: inside;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .organisations {
+    & .leading {
+      padding: 40px 80px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .organisations {
+    & .leading {
+      padding: 40px;
+    }
+  }
+}
+
+.organisations {
+  & .reset {
+    background: var(--pink);
+    padding: 40px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & h3 {
+      font: var(--font-h0);
+      color: var(--red);
+    }
+    & h4 {
+      font: var(--font-h4);
+      color: var(--red);
+    }
+    & p {
+      font: var(--font-p1);
+      font-weight: 300;
+      color: var(--red);
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .organisations {
+    & .reset {
+      padding: 40px;
+      & p {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.organisations {
+  & .the-dance {
+    background-image: url("../../../public/img/home/hero-img.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & .content {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 700px 40px 80px;
+      & h2,
+      h3 {
+        font: var(--font-h2);
+        font-weight: 700;
+        color: var(--white);
+      }
+      & p {
+        font: var(--font-p1);
+        font-weight: 300;
+        color: var(--white);
+        padding: 20px 0px;
+      }
+      & .features {
+        display: flex;
+        gap: 20px;
+        & .feature {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          border: 1px solid var(--red);
+          background: var(--white);
+          padding: 20px;
+          width: 300px;
+          & img {
+            width: 24px;
+            height: fit-content;
+          }
+          & h4 {
+            font: var(--font-p1);
+            font-weight: 700;
+          }
+          & p {
+            font: var(--font-p2);
+            font-weight: 300;
+            color: var(--black);
+            padding: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  .organisations {
+    & .the-dance {
+      & .content {
+        padding: 40px 440px 40px 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .organisations {
+    & .the-dance {
+      & .content {
+        padding: 40px 200px 40px 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 956px) {
+  .organisations {
+    & .the-dance {
+      & .content {
+        padding: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .organisations {
+    & .the-dance {
+      & .content {
+        padding: 40px 20px;
+        & .features {
+          flex-direction: column;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.my-story {
+  & .about-me {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    & h2 {
+      margin: 0 auto;
+      font: var(--font-h0);
+      font-weight: 700;
+      color: var(--black);
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .my-story {
+    & .about-me {
+      grid-template-columns: 1fr;
+      & h2 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .my-story {
+    & .about-me {
+      & h2 {
+        font: var(--font-h1);
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .my-story {
+    & .about-me {
+      padding: 20px;
+    }
+  }
+}
+
+.organisations{
+    & .rhythm-section{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        & .rhythms{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            & .rhythm{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid var(--red2);
+                padding: 40px 10px;
+                gap: 10px;
+                & h4{
+                    font: var(--font-p1);
+                    font-weight: 600;
+                }
+                & p{
+                    font: var(--font-p2);
+                    font-weight: 400;
+                }
+                & ul li{
+                    font: var(--font-p3);
+                    font-weight: 300;
+                    list-style: inside;
+                    padding-left: 20px;
+                }
+            }
+        }
+        & .content{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px;
+            text-align: center;
+            & h2{
+                font: var(--font-h2);
+                font-weight: 600;
+            }
+            & p{
+                font: var(--font-p1);
+            }
+        }
+    }
+}
+
+@media (max-width: 440px){
+    .organisations{
+        & .rhythm-section{
+            padding-top: 0px;
+            & .rhythms{
+                grid-template-columns: 1fr;
+            }
+            & .content{
+                padding: 20px;
+                gap: 20px;
+            }
+        }
+    }
+}

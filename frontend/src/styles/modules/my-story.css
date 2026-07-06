@@ -1,0 +1,130 @@
+.my-story {
+  & .hero-section {
+    background: var(--red2);
+    padding: 20px;
+    text-align: center;
+    & h1 {
+      font: var(--font-h0);
+    }
+  }
+
+  & .about-me {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 20px;
+    & .content {
+      & .text {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        & p {
+          font: var(--font-p1);
+          font-weight: 300;
+          color: var(--black);
+        }
+        & h3 {
+          font: var(--font-h3);
+        }
+      }
+      & .my-background {
+        padding: 20px;
+        & div {
+          padding: 20px;
+          border-radius: 4px;
+
+          & dt {
+            & button {
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              width: 100%;
+              gap: 10px;
+              align-items: center;
+              background: transparent;
+              font: var(--font-p2-cap);
+              text-align: left;
+              cursor: pointer;
+              &::before {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 1px;
+                background: var(--red);
+              }
+              & img {
+                width: 24px;
+                transform: rotate(0deg);
+                transition: transform 0.5s ease;
+                &:hover {
+                  transform: rotate(180deg);
+                }
+              }
+              &[aria-expanded="true"] img {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          & dd {
+            display: none;
+            font: var(--font-p3);
+            font-weight: 400;
+            padding-top: 10px;
+            max-width: 80ch;
+            padding-left: 30px;
+            &.active {
+              display: flex;
+            }
+            & ul {
+              & li {
+                list-style: disc;
+              }
+            }
+          }
+        }
+        & div:nth-child(odd) {
+          background: var(--pink-2);
+        }
+      }
+    }
+    & .img {
+      & img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .my-story {
+    & .about-me {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.responsibility{
+  background: var(--red);
+  padding: 80px 160px;
+  text-align: center;
+  & h2{
+    font: var(--font-h0);
+    color: var(--white);
+  }
+  & p{
+    font: var(--font-p2);
+    color: var(--white);
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 1030px){
+  .responsibility{
+    padding: 80px;
+  }
+}
+
+@media (max-width: 440px){
+  .responsibility{
+    padding: 40px 20px;
+  }
+}
