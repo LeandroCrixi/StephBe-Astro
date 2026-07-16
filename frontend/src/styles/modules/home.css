@@ -111,21 +111,21 @@
   & .clarity-series-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 40px 40px 160px;
-    & h3,
+    & h3, h4,
     p,
     li,
-    a,
-    span {
+    a{
       color: var(--white);
-    }
-    & span {
-      font: var(--font-p1);
     }
     & h3 {
       font: var(--font-h2);
       font-weight: 700;
       max-width: 18ch;
+    }
+    & h4{
+      font: var(--font-h4);
       padding-bottom: 20px;
+      text-decoration: underline;
     }
     & p {
       font: var(--font-p1);

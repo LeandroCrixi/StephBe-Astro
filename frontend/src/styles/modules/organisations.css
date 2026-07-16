@@ -143,6 +143,18 @@
           }
         }
       }
+      ul {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & li {
+    display: flex;
+    gap: 10px;
+    font: var(--font-p1);
+    color: var(--white);
+  }
+}
     }
   }
 }
@@ -232,65 +244,65 @@
   }
 }
 
-.organisations{
-    & .rhythm-section{
+.organisations {
+  & .rhythm-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    & .rhythms {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      & .rhythm {
         display: flex;
         flex-direction: column;
-        padding: 40px;
-        & .rhythms{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            & .rhythm{
-                display: flex;
-                flex-direction: column;
-                border: 1px solid var(--red2);
-                padding: 40px 10px;
-                gap: 10px;
-                & h4{
-                    font: var(--font-p1);
-                    font-weight: 600;
-                }
-                & p{
-                    font: var(--font-p2);
-                    font-weight: 400;
-                }
-                & ul li{
-                    font: var(--font-p3);
-                    font-weight: 300;
-                    list-style: inside;
-                    padding-left: 20px;
-                }
-            }
+        border: 1px solid var(--red2);
+        padding: 40px 10px;
+        gap: 10px;
+        & h4 {
+          font: var(--font-p1);
+          font-weight: 600;
         }
-        & .content{
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            padding: 40px;
-            text-align: center;
-            & h2{
-                font: var(--font-h2);
-                font-weight: 600;
-            }
-            & p{
-                font: var(--font-p1);
-            }
+        & p {
+          font: var(--font-p2);
+          font-weight: 400;
         }
+        & ul li {
+          font: var(--font-p3);
+          font-weight: 300;
+          list-style: inside;
+          padding-left: 20px;
+        }
+      }
     }
+    & .content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px;
+      text-align: center;
+      & h2 {
+        font: var(--font-h2);
+        font-weight: 600;
+      }
+      & p {
+        font: var(--font-p1);
+      }
+    }
+  }
 }
 
-@media (max-width: 440px){
-    .organisations{
-        & .rhythm-section{
-            padding-top: 0px;
-            & .rhythms{
-                grid-template-columns: 1fr;
-            }
-            & .content{
-                padding: 20px;
-                gap: 20px;
-            }
-        }
+@media (max-width: 440px) {
+  .organisations {
+    & .rhythm-section {
+      padding-top: 0px;
+      & .rhythms {
+        grid-template-columns: 1fr;
+      }
+      & .content {
+        padding: 20px;
+        gap: 20px;
+      }
     }
+  }
 }
