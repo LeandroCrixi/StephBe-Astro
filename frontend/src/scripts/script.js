@@ -1,13 +1,11 @@
-import { currentYear, myBackground } from "./modules/dom.js";
-import { GlobalHeader } from "./components/header.js";
+import { currentYear, myBackground, ActiveMenu } from "./modules/dom.js";
 import { initBurgerMenu } from "./components/burgerMenu.js";
-import { GlobalCTA } from "./components/cta.js";
 import { initCal } from "./components/cal.js";
-import { GlobalFooter } from "./components/footer.js";
 
 // currentYear()
 initBurgerMenu();
 myBackground();
+ActiveMenu();
 initCal("catch-up");
 initCal("private-coaching-clients");
 initCal("exec-coaching-clients");

@@ -21,4 +21,17 @@ const myBackground = () => {
   });
 };
 
-export { currentYear, myBackground };
+const ActiveMenu = () => {
+  const links = document.querySelectorAll(".nav-menu a");
+
+  links.forEach((link) => {
+    const url = location.href;
+    const href = link.href;
+
+    if (url === href) {
+      link.classList.add("active");
+    }
+  });
+};
+
+export { currentYear, myBackground, ActiveMenu };

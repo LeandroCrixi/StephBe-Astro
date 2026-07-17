@@ -18,13 +18,26 @@
         flex-direction: column;
         padding: 20px;
         gap: 20px;
+        & h3 {
+          font: var(--font-h3);
+        }
         & p {
           font: var(--font-p1);
           font-weight: 300;
           color: var(--black);
         }
-        & h3 {
-          font: var(--font-h3);
+        & div {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          & span {
+            font: var(--font-p3);
+            color: var(--red2);
+            text-align: center;
+          }
+          & img {
+            width: 40px;
+          }
         }
       }
       & .my-background {
@@ -92,6 +105,52 @@
       }
     }
   }
+
+  .clarity-series {
+    & .clarity-series-content {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 40px 80px;
+      & .cs-content {
+        justify-items: center;
+        text-align: center;
+        & h3 {
+          max-width: 100%;
+        }
+        & p {
+          padding-top: 10px;
+          max-width: 100%;
+        }
+      }
+
+      & .cs-btn {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  & .rhythm-section {
+    & .rhythms {
+      & .rhythm {
+        border-color: var(--white) !important;
+        background-color: rgba(228, 84, 83, 0.1);
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .my-story {
+    & .clarity-series {
+      & .clarity-series-content {
+        padding: 40px;
+        & .rhythm-section {
+          padding: 20px 0px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 440px) {
@@ -99,32 +158,46 @@
     & .about-me {
       grid-template-columns: 1fr;
     }
+
+    & .clarity-series {
+      & .clarity-series-content {
+        & .rhythm-section {
+          & .rhythms {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+
+    & .about-me .content .my-background {
+      padding: 0px;
+    }
   }
 }
 
-.responsibility{
+.responsibility {
   background: var(--red);
   padding: 80px 160px;
   text-align: center;
-  & h2{
+  & h2 {
     font: var(--font-h0);
     color: var(--white);
   }
-  & p{
+  & p {
     font: var(--font-p2);
     color: var(--white);
     padding-top: 40px;
   }
 }
 
-@media (max-width: 1030px){
-  .responsibility{
+@media (max-width: 1030px) {
+  .responsibility {
     padding: 80px;
   }
 }
 
-@media (max-width: 440px){
-  .responsibility{
+@media (max-width: 440px) {
+  .responsibility {
     padding: 40px 20px;
   }
 }
