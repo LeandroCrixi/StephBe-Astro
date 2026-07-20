@@ -1,7 +1,7 @@
 .individuals {
   & .hero-section {
     background: var(--white);
-    padding: 20px;
+    padding: 20px 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -51,6 +51,14 @@
   .individuals {
     & .performance {
       padding: 40px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .individuals {
+    & .hero-section {
+      padding: 20px;
     }
   }
 }
@@ -190,12 +198,105 @@
   }
 }
 
+@media (max-width: 956px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 4.25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 874px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 852px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 3.85rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 4.55rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 4.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 744px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 667px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 440px) {
   .individuals {
     & .flexible {
       padding: 40px;
+      & h3 {
+        font-size: 3.15rem;
+      }
       & p {
         padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 402px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 3.75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 393px) {
+  .individuals {
+    & .flexible {
+      & h3 {
+        font-size: 3.45rem;
       }
     }
   }
@@ -249,6 +350,18 @@
         }
         &:hover {
           border-color: var(--red);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .individuals {
+    & .coaching {
+      & .title {
+        & h2 {
+          font-size: 2.65rem;
         }
       }
     }
@@ -313,6 +426,17 @@
     & .why-coaching {
       padding: 40px;
       padding-top: 0px;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .individuals {
+    & .not-sure {
+      & h4 {
+        font-size: 4.6rem;
+      }
     }
   }
 }

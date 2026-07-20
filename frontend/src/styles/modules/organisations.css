@@ -110,6 +110,10 @@
         font-weight: 700;
         color: var(--white);
       }
+      & h4{
+        font: var(--font-p2);
+        color: var(--pink);
+      }
       & p {
         font: var(--font-p1);
         font-weight: 300;
@@ -134,6 +138,7 @@
           & h4 {
             font: var(--font-p1);
             font-weight: 700;
+            color: var(--black);
           }
           & p {
             font: var(--font-p2);
