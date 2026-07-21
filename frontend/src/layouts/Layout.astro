@@ -5,118 +5,74 @@ import CTA from '../components/CTA.astro'
 import '../styles/style.css';
 import logo from '../../public/img/Logo3.svg'
 
-const { metaDescription } = Astro.props;
-const { metaKeywords } = Astro.props;
-const { title } = Astro.props;
-const { ogUrl } = Astro.props;
-const { classMain } = Astro.props;
+// const { metaDescription } = Astro.props;
+// const { metaKeywords } = Astro.props;
+// const { title } = Astro.props;
+// const { ogUrl } = Astro.props;
+// const { classMain } = Astro.props;
 
-// interface Props {
-//   title: string
-//   metaDescription: string
-//   ogUrl?: string
-//   image?: string
-// }
+interface Props {
+  title: string
+  metaDescription: string
+  metaKeywords: string
+  classMain: string
+  ogUrl?: string
+  image?: string
+}
 
-// const {
-//   title,
-//   metaDescription,
-//   ogUrl = Astro.url.href,
-//   image = 'https://rivercityyouthstrings.com/Logo.svg',
-// } = Astro.props
+const {
+  title,
+  metaDescription,
+  metaKeywords,
+  classMain,
+  ogUrl = Astro.url.href,
+  image = 'https://rivercityyouthstrings.com/Logo3.svg',
+} = Astro.props
 
-// const siteName = 'River City Youth Strings'
+const siteName = 'StephBe'
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-
-    <!-- Primary Meta Tags -->
-    <!-- <title>{title} | {siteName}</title>
-    <meta name="description" content={metaDescription} />
-    <meta name="author" content={siteName} />
-    <link rel="canonical" href={ogUrl} />
-    <meta name="robots" content="index, follow" /> -->
-
-    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <!-- <meta property="og:site_name" content={siteName} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={ogUrl} />
-    <meta property="og:title" content={`${title} | ${siteName}`} />
-    <meta property="og:description" content={metaDescription} />
-    <meta property="og:image" content={image} /> -->
-
-    <!-- Twitter Card -->
-    <!-- <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={`${title} | ${siteName}`} />
-    <meta name="twitter:description" content={metaDescription} />
-    <meta name="twitter:image" content={image} /> -->
-
-    <!-- Favicon (stored in public/favicon.svg) -->
-    <!-- <link rel="icon" href="/Logo.svg" type="image/svg+xml" /> -->
-
-    <!-- Sitemap -->
-    <!-- <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" /> -->
-
-    <!-- Structured Data / JSON-LD -->
-    <!-- <script
-      type="application/ld+json"
-      set:html={JSON.stringify({
-        '@context': 'https://schema.org',
-        '@graph': [
-          {
-            '@type': 'MusicSchool',
-            '@id': 'https://rivercityyouthstrings.com/#organization',
-            name: 'River City Youth Strings',
-            url: 'https://rivercityyouthstrings.com/',
-            logo: 'https://rivercityyouthstrings.com/logo.svg',
-            founder: {
-              '@type': 'Person',
-              name: 'Teresa Bellamy',
-            },
-          },
-          {
-            '@type': 'WebPage',
-            '@id': ogUrl,
-            url: ogUrl,
-            name: title,
-            description: metaDescription,
-          },
-        ],
-      })}
-    /> -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content={metaDescription} />
-    <meta name="keywords" content={metaKeywords} />
-    <meta name="author" content="StephBe" />
-
-    <!-- Open Graph / Facebook / WhatsApp / Linkedin -->
-    <meta property="og:title" content={title} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={ogUrl} />
-    <meta property="og:description" content={metaDescription} />
-
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" href='../../public/img/Logo3.svg' type="image/x-icon" />
-
+      <!-- Primary Meta Tags -->
     <title>{title}</title>
-
+    <meta name="description" content={metaDescription} />
+    <meta name="author" content="StephBe" />
+    <meta name="keywords" content={metaKeywords} />
     <link rel="canonical" href="https://stephbe.ie/" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:site_name" content="StephBe" />
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:image" content={image} />
+
+    <!-- Open Graph / Facebook / WhatsApp / Linkedin -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDescription} />
+
+     <!-- Twitter Card -->
+    <!-- <meta name="twitter:image" content={image} /> -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@StephBe" />
     <meta name="twitter:title" content= {title} />
     <meta name="twitter:description" content= {metaDescription} />
+    <meta property="og:site_name" content="StephBe" />
+    <meta name="twitter:site" content="@StephBe" />
 
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href='/Logo3.svg' type="image/x-icon" />
+
+ <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
+
+    <!-- Structured Data / JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -125,8 +81,7 @@ const { classMain } = Astro.props;
             "@type": "Organization",
             "name": "StephBe",
             "url": {ogUrl},
-            "logo": "https://stephbe.ie/../../public/img/Logo3.svg"
-            // "logo": "https://stephbe.ie/public/img/Logo3.svg"
+            "logo": "https://stephbe.ie/Logo3.svg"
           },
           {
             "@type": "WebSite",
