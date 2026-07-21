@@ -110,7 +110,7 @@
         font-weight: 700;
         color: var(--white);
       }
-      & h4{
+      & h4 {
         font: var(--font-p2);
         color: var(--pink);
       }
@@ -149,17 +149,17 @@
         }
       }
       ul {
-  padding: 20px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  & li {
-    display: flex;
-    gap: 10px;
-    font: var(--font-p1);
-    color: var(--white);
-  }
-}
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        & li {
+          display: flex;
+          gap: 10px;
+          font: var(--font-p1);
+          color: var(--white);
+        }
+      }
     }
   }
 }
@@ -249,7 +249,8 @@
   }
 }
 
-.organisations, .my-story {
+.organisations,
+.my-story {
   & .rhythm-section {
     display: flex;
     flex-direction: column;
@@ -296,11 +297,16 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .organisations .rhythm-section .content {
+    background: var(--pink);
+    margin-top: 40px;
+  }
+}
 
 @media (max-width: 440px) {
   .organisations {
     & .rhythm-section {
-      padding-top: 0px;
       & .rhythms {
         grid-template-columns: 1fr;
       }
@@ -309,5 +315,28 @@
         gap: 20px;
       }
     }
+  }
+}
+
+.organisations .individuals .coaching .contents .content ul li {
+  font: var(--font-p2);
+  list-style: inside;
+}
+
+.org {
+  & ul li {
+    font: var(--font-p2);
+    list-style: inside;
+  }
+  & h4 {
+    margin-top: 40px;
+    font: var(--font-h4);
+    color: var(--red2);
+    text-decoration: underline;
+  }
+  & span {
+    border-left: 2px solid var(--pink);
+    padding-left: 20px;
+    font: var(--font-p3);
   }
 }
