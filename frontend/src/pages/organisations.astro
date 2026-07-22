@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import connect from "../../public/icons/connectdevelop.svg";
+import handShake from "../../public/icons/handshake.svg";
+import user from "../../public/icons/user.svg";
+import clarity from "../../public/img/home/clarity-series.jpeg";
 ---
 
 <Layout
@@ -77,19 +82,19 @@ import Layout from "../layouts/Layout.astro";
       </p>
       <div class="features">
         <div class="feature">
-          <img src="../public/icons/connectdevelop.svg" alt="Strategic leadership icon" />
+          <Image class="logo" src={connect} alt="" />
           <h4>Strategic Leadership</h4>
           <p>Develop leaders who create clarity, accountability, momentum and create high-performing organisations</p>
         </div>
         <div class="feature">
-          <img src="../public/icons/handshake.svg" alt="Strategy and alignment icon" />
+          <Image class="logo" src={handShake} alt="" />
           <h4>Strategy & Alignment</h4>
           <p>
             Working with senior teams to clarify direction, align priorities and turn strategy into everyday behaviour.
           </p>
         </div>
         <div class="feature">
-          <img src="../public/icons/user.svg" alt="Individual performance icon" />
+          <Image class="logo" src={user} alt="" />
           <h4>Individual Performance</h4>
           <p>Unlock the capability that’s already in your people with structured programmes and focused consulting.</p>
         </div>
@@ -172,7 +177,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="contents">
         <div class="content">
-          <img src="../public/icons/handshake.svg" alt="Interview coaching icon" />
+          <Image class="logo" src={handShake} alt="" />
           <h3>Project</h3>
           <ul>
             <li>The Science of Success​</li>
@@ -184,7 +189,7 @@ import Layout from "../layouts/Layout.astro";
           </ul>
         </div>
         <div class="content">
-          <img src="../public/icons/user.svg" alt="One-to-one coaching icon" />
+          <Image class="logo" src={user} alt="" />
           <h3>Focus</h3>
           <ul>
             <li>Keynote</li>
@@ -271,7 +276,8 @@ import Layout from "../layouts/Layout.astro";
     <div class="content">
       <h2>Ready to Reset the Rhythm?</h2>
       <p>
-        If something in your organisation feels out of step whether in leadership, behaviour or execution its time to talk.
+        If something in your organisation feels out of step whether in leadership, behaviour or execution its time to
+        talk.
       </p>
       <div class="btn-section">
         <a
@@ -328,7 +334,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div class="img">
-        <img src="../public/img/home/clarity-series.JPG" alt="Portrait of StephBe in professional setting" />
+        <Image class="logo" src={clarity} alt="Portrait of StephBe in professional setting" />
       </div>
     </section>
   </div>

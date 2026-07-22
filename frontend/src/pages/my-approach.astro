@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ClaritySeries from "../components/ClaritySeries.astro";
+import { Image } from "astro:assets";
+import myStory from "../../public/img/my-story/my-story.jpeg";
+import quoteLeft from "../../public/icons/quote-left.svg";
+import quoteRight from "../../public/icons/quote-right.svg";
+import arrowDown from "../../public/icons/arrow-down.svg";
 ---
 
 <Layout
@@ -26,9 +31,9 @@ import ClaritySeries from "../components/ClaritySeries.astro";
         <h3>My purpose never changes.​</h3>
         <p>I help people think differently so they can perform differently. Behaviour follows mindset.​</p>
         <div>
-          <img src="../../public/icons/quote-left.svg" alt="" />
+          <Image class="logo" src={quoteLeft} alt="" />
           <span>"You don't rely on generic coaching frameworks. You help people think differently."</span>
-          <img src="../../public/icons/quote-right.svg" alt="" />
+          <Image class="logo" src={quoteRight} alt="" />
         </div>
         <h3>Clarity changes everything.​</h3>
         <p>
@@ -38,9 +43,9 @@ import ClaritySeries from "../components/ClaritySeries.astro";
           here.
         </p>
         <div>
-          <img src="../../public/icons/quote-left.svg" alt="" />
+          <Image class="logo" src={quoteLeft} alt="" />
           <span>Steph has an incredible ability to help people see the woods for the trees.​</span>
-          <img src="../../public/icons/quote-right.svg" alt="" />
+          <Image class="logo" src={quoteRight} alt="" />
         </div>
         <h3>Looking beneath the surface​</h3>
         <p>
@@ -54,9 +59,9 @@ import ClaritySeries from "../components/ClaritySeries.astro";
           Because when we understand the real issue, we can stop treating symptoms and start creating lasting change.​
         </p>
         <div>
-          <img src="../../public/icons/quote-left.svg" alt="" />
+          <Image class="logo" src={quoteLeft} alt="" />
           <span>"Steph consistently moves beyond reflection into meaningful action."​</span>
-          <img src="../../public/icons/quote-right.svg" alt="" />
+          <Image class="logo" src={quoteRight} alt="" />
         </div>
         <h3>My approach​</h3>
         <p>
@@ -65,9 +70,9 @@ import ClaritySeries from "../components/ClaritySeries.astro";
           practical, we turn insight into action which creates lasting change.
         </p>
         <div>
-          <img src="../../public/icons/quote-left.svg" alt="" />
+          <Image class="logo" src={quoteLeft} alt="" />
           <span>“You develop confidence without dependency."​</span>
-          <img src="../../public/icons/quote-right.svg" alt="" />
+          <Image class="logo" src={quoteRight} alt="" />
         </div>
       </div>
       <div class="my-background">
@@ -75,7 +80,7 @@ import ClaritySeries from "../components/ClaritySeries.astro";
           <div>
             <dt>
               <button aria-expanded="true" aria-controls="bg1">
-                Professional Background <img src="../public/icons/arrow-down.svg" alt="Toggle details" />
+                Professional Background  <Image class="logo" src={arrowDown} alt="" />
               </button>
             </dt>
             <dd id="bg1" class="active">
@@ -90,7 +95,7 @@ import ClaritySeries from "../components/ClaritySeries.astro";
             <dt>
               <button aria-expanded="false" aria-controls="bg2">
                 Advanced Diploma in Personal and Business Coaching
-                <img src="../public/icons/arrow-down.svg" alt="Toggle details" />
+                 <Image class="logo" src={arrowDown} alt="" />
               </button>
             </dt>
             <dd id="bg2">Irish Life Coaching Institute, 2024</dd>
@@ -99,7 +104,7 @@ import ClaritySeries from "../components/ClaritySeries.astro";
             <dt>
               <button aria-expanded="false" aria-controls="bg3">
                 Advanced Diploma in Coaching with Neuroscience
-                <img src="../public/icons/arrow-down.svg" alt="Toggle details" />
+                 <Image class="logo" src={arrowDown} alt="" />
               </button>
             </dt>
             <dd id="bg3">The Positive Success Group</dd>
@@ -118,7 +123,7 @@ import ClaritySeries from "../components/ClaritySeries.astro";
           <div>
             <dt>
               <button aria-expanded="false" aria-controls="bg5">
-                Certificate in Career Coaching <img src="../public/icons/arrow-down.svg" alt="Toggle details" />
+                Certificate in Career Coaching  <Image class="logo" src={arrowDown} alt="" />
               </button>
             </dt>
             <dd id="bg5">Irish Life Coaching Institute, 2020</dd>
@@ -137,7 +142,7 @@ import ClaritySeries from "../components/ClaritySeries.astro";
           <div>
             <dt>
               <button aria-expanded="false" aria-controls="bg7">
-                CIPD Certificate in Personnel Practice <img src="../public/icons/arrow-down.svg" alt="Toggle details" />
+                CIPD Certificate in Personnel Practice  <Image class="logo" src={arrowDown} alt="" />
               </button>
             </dt>
             <dd id="bg7">Dublin Institute of Technology, 2005</dd>
@@ -145,7 +150,7 @@ import ClaritySeries from "../components/ClaritySeries.astro";
           <div>
             <dt>
               <button aria-expanded="false" aria-controls="bg8">
-                Bachelor of Business (2:1) <img src="../public/icons/arrow-down.svg" alt="Toggle details" />
+                Bachelor of Business (2:1)  <Image class="logo" src={arrowDown} alt="" />
               </button>
             </dt>
             <dd id="bg8">Dublin Business School, 2004</dd>
@@ -154,7 +159,8 @@ import ClaritySeries from "../components/ClaritySeries.astro";
       </div>
     </div>
     <div class="img">
-      <img src="../public/img/my-story/my-story.JPG" alt="Portrait of StephBe in professional setting" />
+      <Image class="logo" src={myStory} alt="Portrait of StephBe in professional setting" />
+      <!-- <img src="../public/img/my-story/my-story.JPG" alt="Portrait of StephBe in professional setting" /> -->
     </div>
   </section>
 
@@ -162,22 +168,22 @@ import ClaritySeries from "../components/ClaritySeries.astro";
     <div class="clarity-series-content">
       <div class="cs-content">
         <h3>The StephBe Global Collective​</h3>
-      <p>
-        Over the years I've built a trusted network of exceptional specialists across leadership, organisational
-        development, HR, coaching, facilitation, learning design and communications.​
-      </p>
-      <p>
-        When a project benefits from additional expertise, I bring together the right people to create the greatest
-        impact for my clients.​
-      </p>
-      <p>
-        Every member of the StephBe Global Collective is someone I've worked with, trust completely and would happily
-        recommend.​
-      </p>
-      <p>
-        It's a flexible model that means clients receive the personal relationship of working directly with me, backed
-        by the capability of a wider team when needed.
-      </p>
+        <p>
+          Over the years I've built a trusted network of exceptional specialists across leadership, organisational
+          development, HR, coaching, facilitation, learning design and communications.​
+        </p>
+        <p>
+          When a project benefits from additional expertise, I bring together the right people to create the greatest
+          impact for my clients.​
+        </p>
+        <p>
+          Every member of the StephBe Global Collective is someone I've worked with, trust completely and would happily
+          recommend.​
+        </p>
+        <p>
+          It's a flexible model that means clients receive the personal relationship of working directly with me, backed
+          by the capability of a wider team when needed.
+        </p>
       </div>
 
       <section class="rhythm-section container">

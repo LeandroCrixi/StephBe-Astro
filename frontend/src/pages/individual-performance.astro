@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import handShake from "../../public/icons/handshake.svg";
+import user from "../../public/icons/user.svg";
 ---
 
 <Layout
@@ -131,7 +134,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <div class="contents">
       <div class="content">
-        <img src="../public/icons/handshake.svg" alt="Interview coaching icon" />
+        <Image class="logo" src={handShake} alt="" />
         <h3>Interview Coaching: One & Done</h3>
         <p>
           A focused, high-impact session designed to prepare you for a specific interview sharpening your message,
@@ -148,7 +151,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div class="content">
-        <img src="../public/icons/user.svg" alt="One-to-one coaching icon" />
+        <Image class="logo" src={user} alt="" />
         <h3>Focused 1:1 Support</h3>
         <p>
           For those who want more tailored support, I offer a limited number of private sessions focused on clarity,
