@@ -24,12 +24,18 @@ const myBackground = () => {
 const ActiveMenu = () => {
   const links = document.querySelectorAll(".nav-menu a");
 
-  links.forEach((link) => {
-    const url = location.href;
-    const href = link.href;
+  // Normalize current path by removing trailing slash (unless it's root '/')
+  const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
 
-    if (url === href) {
+  links.forEach((link) => {
+    // Get the link's pathname and normalize trailing slashes
+    const linkPath = link.pathname.replace(/\/$/, "") || "/";
+
+    // Compare paths instead of full URLs
+    if (currentPath === linkPath) {
       link.classList.add("active");
+    } else {
+      link.classList.remove("active");
     }
   });
 };
