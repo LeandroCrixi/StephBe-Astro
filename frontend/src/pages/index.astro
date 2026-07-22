@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets'
+import heroImg from '../../public/img/home/what-i-do.jpeg'
+import arrow from '../../public/icons/arrow_right.svg'
 ---
 
 <Layout
@@ -37,10 +40,11 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <div class="my-story">
       <div>
-        <img
+        <!-- <img
           src="./public/img/home/what-i-do.JPG"
           alt="What I do – leadership and organisational development at StephBe"
-        />
+        /> -->
+        <Image src={heroImg} alt="What I do – leadership and organisational development at StephBe" />
       </div>
       <div>
         <h3>How I help</h3>
@@ -65,7 +69,7 @@ import Layout from "../layouts/Layout.astro";
           leaders shift it.
         </p>
         <a href="/my-approach" class="btn-secondary"
-          >Discover even more <img src="/icons/arrow_right.svg" alt="Arrow pointing right" /></a
+          >Discover even more <Image src={arrow} alt='Arrow pointing right' /></a
         >
       </div>
     </div>
