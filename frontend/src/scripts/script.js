@@ -9,6 +9,3 @@ ActiveMenu();
 initCal("catch-up");
 initCal("private-coaching-clients");
 initCal("exec-coaching-clients");
-
-
-console.log('hello')

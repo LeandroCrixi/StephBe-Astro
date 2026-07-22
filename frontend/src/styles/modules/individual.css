@@ -65,7 +65,7 @@
 
 .individuals {
   & .courses-programmes {
-    background-image: url("../../../public/img/home/hero-img.jpeg");
+    background-image: url("/img/home/hero-img.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

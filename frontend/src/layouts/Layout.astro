@@ -3,7 +3,6 @@ import Header from "../components/Header.astro";
 import Footer from '../components/Footer.astro';
 import CTA from '../components/CTA.astro'
 import '../styles/style.css';
-import logo from '../../public/img/Logo3.svg'
 
 // const { metaDescription } = Astro.props;
 // const { metaKeywords } = Astro.props;
@@ -107,6 +106,9 @@ const siteName = 'StephBe'
 	</main>
 
 	<Footer/>
-    <script type="module" src="../scripts/script.js"></script>
+
+     <script>
+      import '../scripts/script.js';
+    </script>
   </body>
   </html>
